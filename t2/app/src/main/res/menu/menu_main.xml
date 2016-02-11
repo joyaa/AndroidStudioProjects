@@ -1,0 +1,24 @@
+<!-- <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ja44647.tictactoe.AndroidTicTacToe" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu> -->
+
+<menu   xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:TicTacToe="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/new_game"
+    android:title="New Game"
+    android:icon="@drawable/new_game"
+    TicTacToe:showAsAction="always"/>
+<item android:id="@+id/ai_difficulty"
+    android:title="Difficulty"
+    android:icon="@drawable/difficulty_level"
+    TicTacToe:showAsAction="ifRoom"/>
+<item android:id="@+id/quit"
+    android:title="Quit"
+    android:icon="@drawable/quit_game"/>
+</menu>
