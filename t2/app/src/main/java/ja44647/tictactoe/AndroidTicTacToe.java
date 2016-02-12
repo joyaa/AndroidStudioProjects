@@ -102,7 +102,6 @@ public class AndroidTicTacToe extends AppCompatActivity {
                         getResources().getString(R.string.difficulty_harder),
                         getResources().getString(R.string.difficulty_expert)};
 
-                // TODO: Set selected, an integer (0 to n-1), for the Difficulty dialog.
                 int selected = 0;
                 TicTacToeGame.DifficultyLevel difficulty = mGame.getDifficultyLevel();
                 if (difficulty == TicTacToeGame.DifficultyLevel.Easy)
@@ -118,7 +117,6 @@ public class AndroidTicTacToe extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int item) {
                                 dialog.dismiss(); //close dialog
 
-                                // TODO: Set the diff level of mGame based on which item was selected.
                                 if (item == 0)
                                     mGame.setDifficultyLevel(TicTacToeGame.DifficultyLevel.Easy);
                                 else if (item == 1)
