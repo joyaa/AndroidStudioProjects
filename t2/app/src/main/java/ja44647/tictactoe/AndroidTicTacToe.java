@@ -185,24 +185,6 @@ public class AndroidTicTacToe extends AppCompatActivity {
             mBoardButtons[location].setTextColor(Color.rgb(200, 0, 0));
     }
 
-    /** Restarts the game when buttin New Game is pressed.
-     *  It is only possible to restart when a game is over.
-     *  The only other cption could be to give the computer
-     *  a point when the user chooses to restart the game,
-     *  in most cases because the user is loosing.
-     *
-     * @param v
-     */
-    public void restartGame(View v) {
-        if(!mGameOver) {
-            mCountComputer++;
-            mInfoTextView.setText(R.string.result_computer_wins);
-            TextView tv = (TextView) findViewById(R.id.count_computer);
-            tv.setText("Android: "+mCountComputer);
-        }
-        startNewGame();
-    }
-
     private void computerMove() {
         mInfoTextView.setText(R.string.turn_computer);
         int move = mGame.getComputerMove();
