@@ -2,16 +2,19 @@ package ja44647.tictactoe;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,11 +33,13 @@ public class AndroidTicTacToe extends AppCompatActivity {
 
     static final int DIALOG_DIFFICULTY_ID = 0;
     static final int DIALOG_QUIT_ID = 1;
+    static final int DIALOG_ABOUT_ID = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         mBoardButtons = new Button[TicTacToeGame.BOARD_SIZE];
         String[] numNames = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
@@ -67,6 +72,7 @@ public class AndroidTicTacToe extends AppCompatActivity {
 
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main, menu);
+
         return true;
     }
 
@@ -82,6 +88,9 @@ public class AndroidTicTacToe extends AppCompatActivity {
                 return true;
             case R.id.quit:
                 showDialog(DIALOG_QUIT_ID);
+                return true;
+            case R.id.about:
+                showDialog(DIALOG_ABOUT_ID);
                 return true;
         }
         return false;
@@ -140,6 +149,14 @@ public class AndroidTicTacToe extends AppCompatActivity {
                             }
                         })
                         .setNegativeButton(R.string.no, null);
+                dialog = builder.create();
+            case DIALOG_ABOUT_ID:
+
+                Context context = getApplicationContext();
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(LAYOUT_INFLATER_SERVICE);
+                View layout = inflater.inflate(R.layout.about_dialog, null);
+                builder.setView(layout);
+                builder.setPositiveButton("OK", null);
                 dialog = builder.create();
         }
         return dialog;

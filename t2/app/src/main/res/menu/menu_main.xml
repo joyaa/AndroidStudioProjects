@@ -18,6 +18,9 @@
     android:title="Difficulty"
     android:icon="@drawable/difficulty_level"
     TicTacToe:showAsAction="ifRoom"/>
+<item android:id="@+id/about"
+    android:title="About"
+    android:actionLayout="@layout/about_dialog"/>
 <item android:id="@+id/quit"
     android:title="Quit"
     android:icon="@drawable/quit_game"/>
