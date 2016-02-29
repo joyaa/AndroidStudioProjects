@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Android TicTacToe</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_human">You go first</string>
+    <string name="first_computer">Computer go first</string>
+    <string name="turn_human">Your turn</string>
+    <string name="turn_computer">Android\'s turn</string>
+    <string name="result_tie">It\'s tie.</string>
+    <string name="result_human_wins">You won!</string>
+    <string name="result_computer_wins">Android won!</string>
+    <string name="difficulty_choose">Choose a difficulty level</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_harder">Harder</string>
+    <string name="difficulty_expert">Expert</string>
+    <string name="quit_question">Are you sure you want to quit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="info">Info</string>
+    <string name="human_count_text">Human: </string>
+    <string name="human_count">0</string>
+    <string name="tie_count_text">Ties: </string>
+    <string name="tie_count">0</string>
+    <string name="computer_count_text">Android: </string>
+    <string name="computer_count">0</string>
+    <string name="title_activity_download_image">DownloadImage</string>
+
+    <string name="downloading_image">Downloading Image From Web...</string>
+    <string name="no_network_connection">This device is currently not connected to the Internet...Image cannot be downloaded...</string>
+    <string name="url_loser">http://www.cs.utexas.edu/~joeliven/cs371m/t6/loser_image.jpg</string>
+    <string name="url_winner">http://www.cs.utexas.edu/~joeliven/cs371m/t6/winner_image.jpg</string>
+    <string name="url_tie">http://www.cs.utexas.edu/~joeliven/cs371m/t6/tie_image.jpg</string>
+    <string name="download_complete">Download Complete</string>
+</resources>

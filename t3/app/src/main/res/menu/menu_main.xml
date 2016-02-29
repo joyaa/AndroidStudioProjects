@@ -1,0 +1,21 @@
+<menu   xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:TicTacToe="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/new_game"
+        android:title="New Game"
+        android:icon="@drawable/new_game"
+        TicTacToe:showAsAction="always"/>
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"
+        TicTacToe:showAsAction="always"/>
+    <item android:id="@+id/reset_scores"
+        android:title="Reset Scores"
+        android:icon="@drawable/reset"
+        TicTacToe:showAsAction="always"/>
+    <item android:id="@+id/about_dialog"
+        android:title="About"
+        android:actionLayout="@layout/about_dialog"/>
+    <item android:id="@+id/quit"
+        android:title="Quit"
+        android:icon="@drawable/quit_game"/>
+</menu>

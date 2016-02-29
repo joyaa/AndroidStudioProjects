@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center_horizontal">
+
+    <ja44647.tictactoe.BoardView
+        android:id="@+id/board"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center|top"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/human_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/human_count_text"
+            android:textSize="20sp"
+            android:layout_margin="3dp"/>
+
+
+        <TextView
+            android:id="@+id/human_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/human_count"
+            android:textSize="20sp"
+            android:layout_margin="3dp"/>
+
+
+        <TextView
+            android:id="@+id/tie_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tie_count_text"
+            android:textSize="20sp"
+            android:layout_margin="3dp"/>
+
+
+        <TextView
+            android:id="@+id/tie_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tie_count"
+            android:textSize="20sp"
+            android:layout_margin="3dp"/>
+
+
+        <TextView
+            android:id="@+id/computer_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/computer_count_text"
+            android:textSize="20sp"
+            android:layout_margin="3dp"/>
+
+        <TextView
+            android:id="@+id/computer_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/computer_count"
+            android:textSize="20sp"
+            android:layout_margin="3dp"/>
+
+    </LinearLayout>
+</LinearLayout>
